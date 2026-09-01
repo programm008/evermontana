@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evermontana</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f4ee;
+            color: #24352d;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #24352d;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 16px 30px;
+            background: #24352d;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .features {
+            padding: 70px 8%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+        }
+
+        .card h2 {
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.5;
+            color: #65736b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #65736b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Evermontana</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Lernen</a>
+            <a href="#">Quiz</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Evermontana</h1>
+
+        <p>
+            Dein persönlicher Ort zum Lernen, Organisieren
+            und Entdecken.
+        </p>
+
+        <a href="#" class="button">Loslegen</a>
+    </section>
+
+    <section class="features">
+
+        <div class="card">
+            <h2>📝 Notizen</h2>
+            <p>
+                Erstelle übersichtliche und schöne Notizen
+                für deine Schule.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>📚 Lernzettel</h2>
+            <p>
+                Verwandle deine Inhalte in strukturierte
+                Lernzettel.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🧠 Quiz</h2>
+            <p>
+                Erstelle Quizfragen und übe genau die
+                Fragen, die du noch nicht kannst.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🎙️ Podcast</h2>
+            <p>
+                Lass dir deine Lerninhalte als Podcast
+                aufbereiten.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 Evermontana
+    </footer>
+
+</body>
+</html>
