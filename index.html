@@ -14,15 +14,17 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #f7f4ee;
+            background: #f7f4ed;
             color: #24352d;
         }
 
         header {
-            padding: 25px 8%;
+            padding: 25px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid #ddd8cc;
+            background: #faf8f2;
         }
 
         .logo {
@@ -32,136 +34,186 @@
         }
 
         nav a {
-            margin-left: 25px;
             text-decoration: none;
             color: #24352d;
+            margin-left: 25px;
+            font-size: 15px;
         }
 
         .hero {
             min-height: 75vh;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            text-align: center;
-            padding: 40px 20px;
+            padding: 70px 7%;
+            background: linear-gradient(
+                135deg,
+                #dce7d8,
+                #f7f4ed 55%,
+                #e8dcc8
+            );
         }
 
-        .hero h1 {
-            font-size: 70px;
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .small-title {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 13px;
             margin-bottom: 20px;
+            opacity: 0.7;
+        }
+
+        h1 {
+            font-size: clamp(55px, 10vw, 105px);
+            line-height: 0.9;
+            margin-bottom: 30px;
         }
 
         .hero p {
             font-size: 20px;
-            max-width: 600px;
             line-height: 1.6;
+            max-width: 550px;
             margin-bottom: 35px;
         }
 
         .button {
             display: inline-block;
-            padding: 16px 30px;
+            padding: 16px 27px;
             background: #24352d;
             color: white;
-            border-radius: 30px;
             text-decoration: none;
-            font-size: 17px;
+            border-radius: 30px;
+            font-size: 16px;
         }
 
         .features {
-            padding: 70px 8%;
+            padding: 80px 7%;
+        }
+
+        .features h2 {
+            font-size: 42px;
+            margin-bottom: 45px;
+        }
+
+        .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
+            gap: 20px;
         }
 
         .card {
             background: white;
             padding: 30px;
+            min-height: 190px;
             border-radius: 20px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+            border: 1px solid #e1ddd3;
         }
 
-        .card h2 {
-            margin-bottom: 12px;
+        .card .icon {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 21px;
         }
 
         .card p {
             line-height: 1.5;
-            color: #65736b;
+            color: #68736d;
         }
 
         footer {
+            padding: 30px 7%;
+            border-top: 1px solid #ddd8cc;
             text-align: center;
-            padding: 40px;
-            color: #65736b;
+            color: #68736d;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">Evermontana</div>
+<header>
+    <div class="logo">evermontana</div>
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Lernen</a>
-            <a href="#">Quiz</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Lernen</a>
+        <a href="#">Quiz</a>
+        <a href="#">Notizen</a>
+    </nav>
+</header>
 
-    <section class="hero">
-        <h1>Evermontana</h1>
+<section class="hero">
+    <div class="hero-content">
+
+        <div class="small-title">A new way to learn</div>
+
+        <h1>evermontana</h1>
 
         <p>
-            Dein persönlicher Ort zum Lernen, Organisieren
-            und Entdecken.
+            Dein persönlicher Lernspace für Notizen, Lernzettel,
+            Quizze und smarteres Lernen.
         </p>
 
-        <a href="#" class="button">Loslegen</a>
-    </section>
+        <a class="button" href="#">Jetzt starten →</a>
 
-    <section class="features">
+    </div>
+</section>
+
+<section class="features">
+
+    <h2>Alles an einem Ort.</h2>
+
+    <div class="cards">
 
         <div class="card">
-            <h2>📝 Notizen</h2>
+            <div class="icon">✦</div>
+            <h3>Lernzettel</h3>
             <p>
-                Erstelle übersichtliche und schöne Notizen
-                für deine Schule.
+                Erstelle übersichtliche Lernzettel
+                aus deinen Themen.
             </p>
         </div>
 
         <div class="card">
-            <h2>📚 Lernzettel</h2>
+            <div class="icon">✓</div>
+            <h3>Quiz</h3>
             <p>
-                Verwandle deine Inhalte in strukturierte
-                Lernzettel.
+                Teste dein Wissen und wiederhole
+                Fragen, die du falsch beantwortet hast.
             </p>
         </div>
 
         <div class="card">
-            <h2>🧠 Quiz</h2>
+            <div class="icon">✎</div>
+            <h3>Notizen</h3>
             <p>
-                Erstelle Quizfragen und übe genau die
-                Fragen, die du noch nicht kannst.
+                Sammle deine Gedanken und
+                Schulnotizen übersichtlich.
             </p>
         </div>
 
         <div class="card">
-            <h2>🎙️ Podcast</h2>
+            <div class="icon">◉</div>
+            <h3>KI-Lernhilfe</h3>
             <p>
-                Lass dir deine Lerninhalte als Podcast
-                aufbereiten.
+                Stelle Fragen und bekomme
+                verständliche Erklärungen.
             </p>
         </div>
 
-    </section>
+    </div>
 
-    <footer>
-        © 2026 Evermontana
-    </footer>
+</section>
+
+<footer>
+    © 2026 Evermontana
+</footer>
 
 </body>
 </html>
